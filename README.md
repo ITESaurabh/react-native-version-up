@@ -66,13 +66,13 @@ Done!
 ## Installation
 
 ```
-yarn add -D react-native-version-up
+yarn add -D @itesaurabh/react-native-version-up
 ```
 
 Or via npm:
 
 ```
-npm install react-native-version-up --save-dev
+npm install @itesaurabh/react-native-version-up --save-dev
 ```
 
 ## Usage
