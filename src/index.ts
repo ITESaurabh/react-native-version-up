@@ -13,7 +13,7 @@ const argv = yargs
     major: { type: 'boolean', default: false },
     minor: { type: 'boolean', default: false },
     patch: { type: 'boolean', default: false },
-    build: { type: 'boolean', default: false },
+    build: { type: 'number' },
     pathToPackage: { type: 'string' },
     pathToGradle: { type: 'string' },
     pathToPbxproj: { type: 'string' },
@@ -39,12 +39,9 @@ const version = `${major}.${minor}.${patch}`;
 
 // getting next build number
 const androidBuildCurrent = helpers.getBuildNumberFromGradle(pathToGradle);
-const androidBuild = androidBuildCurrent + 1;
+const androidBuild = argv.build !== undefined ? argv.build : androidBuildCurrent + 1;
 const iosBuildCurrent = helpers.getBuildNumberFromPbxproj(pathToPbxproj);
-let iosBuild = 1;
-if (argv.build) {
-  iosBuild = iosBuildCurrent + 1;
-}
+const iosBuild = argv.build !== undefined ? argv.build : iosBuildCurrent + 1;
 
 // getting commit message
 const messageTemplate = argv.m || argv.message || `release ${version}: increase versions and build numbers`;

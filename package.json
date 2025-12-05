@@ -24,8 +24,6 @@
     "yargs": "17.6.2"
   },
   "devDependencies": {
-    "@foxmedia/eslint-config": "git+ssh://git@gitlab.com:foxmedia/eslint-config.git",
-    "@foxmedia/prettier-config": "git+ssh://git@gitlab.com:foxmedia/prettier-config.git",
     "@types/jest": "29.2.3",
     "@types/yargs": "17.0.14",
     "eslint": "8.28.0",

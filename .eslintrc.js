@@ -1,3 +1,3 @@
 module.exports = {
-  extends: '@foxmedia/eslint-config',
+  // extends: '@foxmedia/eslint-config',
 };
