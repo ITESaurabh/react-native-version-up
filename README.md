@@ -1,14 +1,20 @@
-**This package was forked from [react-native-version-up](https://github.com/gustarus/react-native-version-up)**
+## Acknowledgements
 
-**Please, create pull request to the project if you improve something!**
-**It will help us to create hight-quality package together.**
+This package is a fork of [@gdulik/react-native-version-up](https://github.com/gdulik/react-native-version-up), which itself was forked from the original [react-native-version-up](https://github.com/gustarus/react-native-version-up) created by [gustarus](https://github.com/gustarus).
+
+Special thanks to:
+- **[gustarus](https://github.com/gustarus)** - Original creator of react-native-version-up
+- **[gdulik](https://github.com/gdulik)** - For their contributions and improvements to the library
+
+**Please, create pull request to this project if you improve something!**
+**It will help us to create a high-quality package together.**
 
 # React native version upper
 
 Increase `major`, `minor` or `patch` part of the version or `build` number in your app in package.json and in ios and android projects with one command.
 
 ```
-node ./node_modules/@gdulik/react-native-version-up/lib/index.js --patch -m 'commit message'
+node ./node_modules/@itesaurabh/react-native-version-up/lib/index.js --patch -m 'commit message'
 ```
 
 With this script you can:
@@ -21,7 +27,7 @@ With this script you can:
 
 ```bash
 > yarn run version:up --patch
-$ node ./node_modules/@gdulik/react-native-version-up/lib/index.js "--patch"
+$ node ./node_modules/@itesaurabh/react-native-version-up/lib/index.js "--patch"
 
 I'm going to increase the version in:
   - package.json (./package.json);
@@ -31,7 +37,7 @@ I'm going to increase the version in:
 The version will be changed:
   - on iOS
     - from: 1.4.1 (6);
-    - to:   1.4.2 (1).
+    - to:   1.4.2 (7).
   - on android
     - from: 1.4.1 (30);
     - to:   1.4.2 (31).
@@ -77,7 +83,7 @@ npm install react-native-version-up --save-dev
 {
   "name": "your-project-name",
   "scripts": {
-    "version:up": "node ./node_modules/@gdulik/react-native-version-up/lib/index.js"
+    "version:up": "node ./node_modules/@itesaurabh/react-native-version-up/lib/index.js"
   }
 }
 ```
@@ -89,7 +95,7 @@ npm install react-native-version-up --save-dev
   "name": "your-project-name",
   "version": "1.0.0",
   "scripts": {
-    "version:up": "node ./node_modules/@gdulik/react-native-version-up/lib/index.js"
+    "version:up": "node ./node_modules/@itesaurabh/react-native-version-up/lib/index.js"
   }
 }
 ```

@@ -37,7 +37,7 @@ describe('Helpers module', () => {
         'react-native': '0.64.4',
       },
       devDependencies: {
-        '@gdulik/react-native-version-up': '1.1.0',
+        '@itesaurabh/react-native-version-up': '1.1.0',
       },
     });
   });
@@ -65,7 +65,7 @@ describe('Helpers module', () => {
         'react-native': '0.64.4',
       },
       devDependencies: {
-        '@gdulik/react-native-version-up': '1.1.0',
+        '@itesaurabh/react-native-version-up': '1.1.0',
       },
     });
 
